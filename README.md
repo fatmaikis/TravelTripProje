@@ -17,9 +17,12 @@ Bu proje, ASP.NET MVC5 kullanılarak geliştirilen bir tatil seyahat blog sitesi
 ![1](https://github.com/fatmaikis/TravelTripProje/assets/77547782/8f038f7c-20f0-4b87-a942-9dd491ec36bb)
 </br>
 - Blog sitesi tanıtımı ve en popüler 10 blog yer almaktadır.
-![2](https://github.com/fatmaikis/TravelTripProje/assets/77547782/9fa7d2e1-9c84-4937-8b5c-3bdc33322f0d)
+  </br>
+![2](https://github.com/fatmaikis/TravelTripProje/assets/77547782/d1aefed4-6aa0-4bf6-b617-c8d8b91af350)
+
 </br>
 - Hakkımızda sayfası yer almaktadır.
+  </br>
 ![3](https://github.com/fatmaikis/TravelTripProje/assets/77547782/ee749fd2-456d-4fb7-837f-2769c01954ef)
 </br>
 Blog sayfasında blog resmi ve kısa bir tanıtım yazısı yer almaktadır. 
