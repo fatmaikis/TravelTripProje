@@ -1,4 +1,4 @@
-# Tatil Seyahat Blog Sitesi (ASP.NET MVC5)
+# Tatil Seyahat Blog Sitesi
 
 Bu proje, ASP.NET MVC5 kullanılarak geliştirilen bir tatil seyahat blog sitesidir.
 
