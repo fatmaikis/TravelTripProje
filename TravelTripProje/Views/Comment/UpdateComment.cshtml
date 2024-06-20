@@ -1,0 +1,25 @@
+﻿@model TravelTripProje.Models.Entities.Comment
+@{
+    ViewBag.Title = "UpdateComment";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h3>Yorum Güncelleme Sayfası</h3>
+
+<br />
+<form method="post" class="form-group">
+   
+    @Html.HiddenFor(x => x.CommentID)
+    @Html.LabelFor(x => x.UserName, "Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Mail, "Mail")
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.PersonComment, "Yorum")
+    @Html.TextAreaFor(x => x.PersonComment, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-primary">Yorumu Güncelle</button>
+</form>

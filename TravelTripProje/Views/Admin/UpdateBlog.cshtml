@@ -1,0 +1,26 @@
+﻿@model TravelTripProje.Models.Entities.Blog
+@{
+    ViewBag.Title = "UpdateBlog";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Blog Güncelleme Sayfası</h3>
+<br />
+
+<form method="post" class="form-group">
+    @Html.HiddenFor(x=>x.BlogID)
+    @Html.LabelFor(x => x.Title, "Başlık")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Date, "Tarih")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Description, "Açıklama")
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.BlogImage, "Resim")
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+    </form>
+

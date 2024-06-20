@@ -1,0 +1,44 @@
+﻿@model List<TravelTripProje.Models.Entities.Comment>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h3>Yorumlar Listesi</h3>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>#</td>
+        <td>Kullanıcı Adı</td>
+        <td>Mail</td>
+        <td>Yorumlar</td>
+        <td>Blog</td>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td>@item.UserName</td>
+            <td>@item.Mail</td>
+            <td>@item.PersonComment</td>
+            <td>@item.Blog.Title</td>
+            <td>
+                <a href="/Comment/DeleteComment/@item.CommentID" class="btn btn-danger"> Sil</a>
+
+            </td>
+            <td>
+                <a href="/Comment/UpdateComment/@item.CommentID" class="btn btn-warning"> Güncelle</a>
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+<a href="/Comment/AddComment" class="btn btn-primary"> Yeni Yorum</a>
+

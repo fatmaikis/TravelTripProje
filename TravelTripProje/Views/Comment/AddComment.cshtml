@@ -1,0 +1,30 @@
+﻿@model TravelTripProje.Models.Entities.Comment
+@{
+    ViewBag.Title = "AddComment";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h3>Yorum Ekleme Sayfası</h3>
+
+<br />
+
+
+<form method="post" class="form-group">
+    @Html.LabelFor(x => x.UserName, "Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Mail, "Mail")
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.PersonComment, "Yorum")
+    @Html.TextAreaFor(x => x.PersonComment, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.BlogID, "BlogID ")
+    @Html.TextAreaFor(x => x.BlogID, new { @class = "form-control" })
+
+
+
+    <br />
+    <button class="btn btn-primary">Yorumu Kaydet</button>
+</form>
